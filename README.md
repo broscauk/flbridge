@@ -34,6 +34,8 @@ scripts.
 | `modules-data.js` | Offline snapshot of the module manifest |
 | `assets/` | Logo, favicon, screenshots (`shots/`) |
 | `tools/check_site.py` | Headless check (Playwright): console errors, both languages, every demo path, mobile |
+| `tools/geometry.py` | Layout numbers at 1366 / 390 px (overflow, section heads, frame width) + full-page shots |
+| `tools/publish.py` | Mirrors this folder into the GitHub Pages repository and pushes |
 | `tools/make_modules_data.py` | Regenerates `modules-data.js` from a manifest file or URL |
 | `modules-README.md` | Bilingual README for the `flbridge-modules` repository |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
@@ -55,8 +57,24 @@ Edge channel).
 
 ## Publishing
 
-Push this folder to the root of a public repository (or its `docs/` folder) and enable
-**Settings → Pages → Deploy from a branch**.
+Live at **https://broscauk.github.io/flbridge/** — GitHub Pages serves the public repository
+[broscauk/flbridge](https://github.com/broscauk/flbridge) (branch `main`, root). This folder is the
+source; the repository is a mirror of it.
+
+```
+python tools/publish.py "what changed"   # clone/update the mirror in %TEMP%, copy, commit, push
+python tools/publish.py --dry-run        # show what would change
+```
+
+Everything here is pushed except `_check/` and `modules-README.md`. Pages rebuilds within a minute.
+
+## Versions
+
+- **v2** (2026-10-04) — tighter rhythm (15 px base, 40–72 px sections, two-column section heads,
+  4-up gallery), scrollbars in the frame's palette on every scroller, scroll-progress hairline under
+  the header, status pill in the hero; the demo frame no longer shrinks twice on phones. First
+  publication to GitHub Pages.
+- **v1** (2026-10-03) — initial page, interactive demo, tour and hints, live catalogue.
 
 ---
 
@@ -97,6 +115,8 @@ FL Studio в любой DAW. Собрана под GitHub Pages: без сбор
 | `modules-data.js` | Офлайн-снимок манифеста модулей |
 | `assets/` | Логотип, favicon, снимки (`shots/`) |
 | `tools/check_site.py` | Headless-проверка (Playwright): ошибки консоли, оба языка, все пути демо, мобильная вёрстка |
+| `tools/geometry.py` | Числа вёрстки на 1366 / 390 px (переполнение, шапки секций, ширина рамы) + снимки страницы |
+| `tools/publish.py` | Зеркалит папку в репозиторий GitHub Pages и пушит |
 | `tools/make_modules_data.py` | Пересобирает `modules-data.js` из файла или URL манифеста |
 | `modules-README.md` | Двуязычный README для репозитория `flbridge-modules` |
 | `.nojekyll` | Просит GitHub Pages отдавать файлы как есть |
@@ -117,5 +137,21 @@ python tools/check_site.py          # или: python tools/check_site.py http://
 
 ## Публикация
 
-Положить содержимое папки в корень публичного репозитория (или в его `docs/`) и включить
-**Settings → Pages → Deploy from a branch**.
+Живёт по адресу **https://broscauk.github.io/flbridge/** — GitHub Pages отдаёт публичный репозиторий
+[broscauk/flbridge](https://github.com/broscauk/flbridge) (ветка `main`, корень). Исходник — эта
+папка; репозиторий — её зеркало.
+
+```
+python tools/publish.py "что изменилось"   # клон/обновление зеркала в %TEMP%, копия, коммит, push
+python tools/publish.py --dry-run           # показать, что изменится
+```
+
+Уходит всё, кроме `_check/` и `modules-README.md`. Pages пересобирается в пределах минуты.
+
+## Версии
+
+- **v2** (2026-10-04) — плотнее ритм (база 15 px, секции 40–72 px, шапки секций в две колонки,
+  галерея по четыре), скроллбары в палитре рамы на каждой прокрутке, полоса прогресса под шапкой,
+  пилюля-статус в hero; рама демо больше не ужимается дважды на телефонах. Первая публикация на
+  GitHub Pages.
+- **v1** (2026-10-03) — первая страница, интерактивное демо, экскурсия и подсказки, живой каталог.

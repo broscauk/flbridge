@@ -66,6 +66,10 @@ def main():
         git("init", "-b", BRANCH)
         git("remote", "add", "origin", REPO)
         git("fetch", "origin")
+    # GitHub rejects pushes that would expose a private e-mail (GH007); the scratch clone uses
+    # the noreply identity, the same one the wiki repository is configured with.
+    git("config", "user.name", "Ivan")
+    git("config", "user.email", "broscauk@users.noreply.github.com")
     # An empty (just created) repository has no remote branch yet — then start from scratch.
     if git("ls-remote", "--heads", "origin", BRANCH):
         git("checkout", "-B", BRANCH, f"origin/{BRANCH}")
