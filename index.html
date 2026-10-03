@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title">FL Bridge — FL Studio's native plugins in any VST3 host</title>
+  <meta name="description" data-i18n-attr="content:meta_desc" content="FL Bridge runs Image-Line's native FL Studio effects and generators inside Ableton Live and other VST3 hosts on Windows.">
+  <meta name="theme-color" content="#0c0c0d">
+  <meta property="og:title" content="FL Bridge — FL Studio's native plugins in your DAW">
+  <meta property="og:description" content="Host Fruity Soft Clipper, Fast Dist, Reeverb 2, 3x Osc, Harmor and 130+ other native FL Studio modules inside any VST3 host on Windows.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://broscauk.github.io/flbridge/">
+  <meta property="og:image" content="https://broscauk.github.io/flbridge/assets/shots/frame.png">
+  <meta name="generator" content="FL Bridge site v2">
+  <link rel="canonical" href="https://broscauk.github.io/flbridge/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="brand" href="#top" aria-label="FL Bridge">
+      <span class="mark" data-logo></span>
+      <span class="brand-name">FL BRIDGE</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#demo" data-i18n="nav_demo">Live demo</a>
+      <a href="#products" data-i18n="nav_products">Products</a>
+      <a href="#modules" data-i18n="nav_modules">Modules</a>
+      <a href="#gallery" data-i18n="nav_gallery">Screens</a>
+      <a href="#download" data-i18n="nav_download">Download</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a class="btn btn-accent btn-sm" href="#buy" data-i18n="nav_buy">Buy</a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================================================ hero -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="kicker" data-i18n="hero_kicker">VST3 host for native FL Studio plugins · Windows x64 · v1.0.0</p>
+        <h1 data-i18n-html="hero_title">FL Studio's native plugins.<br>In <em>your</em> DAW.</h1>
+        <p class="lead" data-i18n="hero_lead"></p>
+        <div class="cta">
+          <a class="btn btn-accent" href="#download" data-i18n="hero_cta_download">Download 1.0.0</a>
+          <a class="btn btn-ghost" href="#demo" data-i18n="hero_cta_demo">Try the interactive demo</a>
+        </div>
+        <p class="note" data-i18n="hero_note"></p>
+        <ul class="stats">
+          <li><b>88<span class="of">/89</span></b><span data-i18n="stat_effects"></span></li>
+          <li><b>44<span class="of">/51</span></b><span data-i18n="stat_gens"></span></li>
+          <li><b>140</b><span data-i18n="stat_modules"></span></li>
+          <li><b>1</b><span data-i18n="stat_bundle"></span></li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <figure class="shot-card">
+          <img src="assets/shots/frame.png" alt="FL Bridge plugin window" width="960" height="645" loading="eager">
+          <a class="shot-badge" href="#demo" data-tour-go="welcome"><span class="play"></span><span data-i18n="hero_shot_badge">Try it live</span></a>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================ demo -->
+    <section class="section" id="demo">
+      <div class="section-head">
+        <p class="kicker" data-i18n="demo_kicker">Interactive demo</p>
+        <h2 data-i18n="demo_title">Try the frame right here</h2>
+        <p class="section-lead" data-i18n="demo_hint"></p>
+      </div>
+      <div class="demo-wrap">
+        <div class="demo-stage" data-demo-stage>
+          <div id="demo-root" class="flb" tabindex="0" aria-label="FL Bridge interactive demo"></div>
+        </div>
+        <aside class="demo-side">
+          <div class="demo-side-card">
+            <p class="kicker" data-i18n="demo_side_kicker">Guided tour</p>
+            <p data-i18n="demo_side_text"></p>
+            <div class="demo-side-actions">
+              <button type="button" class="btn btn-accent" data-tour-start data-i18n="tour_start">Start the tour</button>
+              <button type="button" class="btn btn-ghost btn-sm" data-demo-reset data-i18n="demo_reset">Reset demo</button>
+            </div>
+            <p class="small" data-i18n="demo_hover"></p>
+          </div>
+          <ol class="tour-toc" data-tour-toc aria-label="Tour steps"></ol>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================ products -->
+    <section class="section" id="products">
+      <div class="section-head">
+        <p class="kicker" data-i18n="products_kicker"></p>
+        <h2 data-i18n="products_title"></h2>
+      </div>
+      <div class="products" data-products></div>
+      <p class="section-foot" data-i18n="products_standalone"></p>
+    </section>
+
+    <!-- ============================================================ features -->
+    <section class="section" id="features">
+      <div class="section-head">
+        <p class="kicker" data-i18n="features_kicker"></p>
+        <h2 data-i18n="features_title"></h2>
+      </div>
+      <div class="features" data-features></div>
+    </section>
+
+    <!-- ============================================================ compatibility -->
+    <section class="section" id="compat">
+      <div class="section-head">
+        <p class="kicker" data-i18n="compat_kicker"></p>
+        <h2 data-i18n="compat_title"></h2>
+        <p class="section-lead" data-i18n="compat_intro"></p>
+      </div>
+      <dl class="compat" data-compat></dl>
+    </section>
+
+    <!-- ============================================================ modules -->
+    <section class="section" id="modules">
+      <div class="section-head">
+        <p class="kicker" data-i18n="modules_kicker"></p>
+        <h2 data-i18n="modules_title"></h2>
+        <p class="section-lead" data-i18n-html="modules_intro"></p>
+      </div>
+      <div class="modules-tools">
+        <input type="search" class="field" data-modules-search data-i18n-attr="placeholder:modules_search_ph" placeholder="Filter modules…" aria-label="Filter modules">
+        <div class="seg" role="group" aria-label="Kind">
+          <button type="button" data-kind="all" aria-pressed="true" data-i18n="modules_all">all</button>
+          <button type="button" data-kind="effect" aria-pressed="false" data-i18n="modules_effects">effects</button>
+          <button type="button" data-kind="generator" aria-pressed="false" data-i18n="modules_generators">generators</button>
+        </div>
+        <span class="modules-source mono" data-modules-source></span>
+      </div>
+      <div class="table-wrap">
+        <table class="modules-table">
+          <thead>
+            <tr>
+              <th data-i18n="modules_col_name">Module</th>
+              <th data-i18n="modules_col_kind">Kind</th>
+              <th class="num" data-i18n="modules_col_size">Download</th>
+              <th class="num" data-i18n="modules_col_unpacked">On disk</th>
+              <th class="num" data-i18n="modules_col_files">Files</th>
+            </tr>
+          </thead>
+          <tbody data-modules-body></tbody>
+        </table>
+      </div>
+      <p class="modules-count mono" data-modules-count></p>
+    </section>
+
+    <!-- ============================================================ gallery -->
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <p class="kicker" data-i18n="gallery_kicker"></p>
+        <h2 data-i18n="gallery_title"></h2>
+        <p class="section-lead" data-i18n="gallery_note"></p>
+      </div>
+      <div class="gallery" data-gallery></div>
+    </section>
+
+    <!-- ============================================================ download -->
+    <section class="section" id="download">
+      <div class="section-head">
+        <p class="kicker" data-i18n="download_kicker"></p>
+        <h2 data-i18n="download_title"></h2>
+      </div>
+      <div class="dl-grid">
+        <article class="card">
+          <h3 data-i18n="dl_main_title"></h3>
+          <p data-i18n="dl_main_text"></p>
+          <a class="btn btn-accent" data-link="download" data-i18n="dl_button" data-soon="dl_button_soon" href="#">Download</a>
+          <p class="mono small" data-link-name="download"></p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="dl_modules_title"></h3>
+          <p data-i18n="dl_modules_text"></p>
+          <a class="btn btn-ghost" data-link="downloadModules" data-i18n="dl_button" data-soon="dl_button_soon" href="#">Download</a>
+          <p class="mono small" data-link-name="downloadModules"></p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="dl_catalogue_title"></h3>
+          <p data-i18n="dl_catalogue_text"></p>
+          <a class="btn btn-ghost" data-link="modulesRepo" data-i18n="dl_open" href="#">Open on GitHub</a>
+          <p class="mono small">github.com/broscauk/flbridge-modules</p>
+        </article>
+      </div>
+      <div class="dl-foot">
+        <div>
+          <h3 data-i18n="dl_req_title"></h3>
+          <p data-i18n="dl_req"></p>
+        </div>
+        <div>
+          <h3 data-i18n="dl_install_title"></h3>
+          <ol data-list="dl_steps"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ buy -->
+    <section class="section" id="buy">
+      <div class="section-head">
+        <p class="kicker" data-i18n="buy_kicker"></p>
+        <h2 data-i18n="buy_title"></h2>
+      </div>
+      <div class="buy-grid">
+        <article class="card card-accent">
+          <p class="price" data-i18n="buy_price"></p>
+          <p data-i18n="buy_lead"></p>
+          <ul class="checks" data-list="buy_items"></ul>
+          <a class="btn btn-accent btn-lg" data-link="buy" data-i18n="buy_button" data-soon="buy_soon" href="#">Buy</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="donate_title"></h3>
+          <p data-i18n="donate_text"></p>
+          <a class="btn btn-ghost" data-link="donate" data-i18n="donate_button" data-soon="donate_soon" href="#">Donate</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================ faq -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <p class="kicker" data-i18n="faq_kicker"></p>
+        <h2 data-i18n="faq_title"></h2>
+      </div>
+      <div class="faq" data-faq></div>
+    </section>
+
+    <!-- ============================================================ contact -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <p class="kicker" data-i18n="contact_kicker"></p>
+        <h2 data-i18n="contact_title"></h2>
+        <p class="section-lead" data-i18n="contact_text"></p>
+      </div>
+      <div class="cta">
+        <a class="btn btn-ghost mono" href="mailto:broscaproducer+flbridge@gmail.com?subject=FL%20Bridge" data-i18n="contact_button">broscaproducer+flbridge@gmail.com</a>
+        <button type="button" class="btn btn-ghost" data-copy="broscaproducer+flbridge@gmail.com" data-i18n="contact_copy">Copy address</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="legal" data-i18n="legal_text"></p>
+    <div class="foot-row">
+      <span class="mono" data-i18n="footer_version">FL Bridge 1.0.0</span>
+      <span class="mono ver" title="Page version">site v2</span>
+      <span data-i18n="footer_made"></span>
+      <a href="mailto:broscaproducer+flbridge@gmail.com" class="mono">broscaproducer+flbridge@gmail.com</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" data-lightbox hidden>
+    <button type="button" class="lightbox-close" aria-label="Close" data-lightbox-close>×</button>
+    <button type="button" class="lightbox-nav prev" aria-label="Previous" data-lightbox-step="-1">‹</button>
+    <button type="button" class="lightbox-nav next" aria-label="Next" data-lightbox-step="1">›</button>
+    <img alt="">
+    <p class="lightbox-cap"></p>
+  </div>
+  <div class="page-toast" data-page-toast hidden></div>
+
+  <script src="i18n.js"></script>
+  <script src="modules-data.js"></script>
+  <script src="demo.js"></script>
+  <script src="tour.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

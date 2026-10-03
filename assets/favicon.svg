@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- FL Bridge mark: two nodes on a base line and the arc between them (UiLogo.h, fractions of a square). -->
+  <rect width="32" height="32" rx="6" fill="#0c0c0d"/>
+  <rect x="1.28" y="22.88" width="29.44" height="1.6" rx=".8" fill="#33333c"/>
+  <path d="M5.76 23.68 A10.24 14.72 0 0 1 26.24 23.68" fill="none" stroke="#f2542d" stroke-opacity=".2" stroke-width="7.6" stroke-linecap="round"/>
+  <path d="M5.76 23.68 A10.24 14.72 0 0 1 26.24 23.68" fill="none" stroke="#f2542d" stroke-width="2.72" stroke-linecap="round"/>
+  <circle cx="5.76" cy="23.68" r="2.88" fill="#e9e7e4"/>
+  <circle cx="26.24" cy="23.68" r="2.88" fill="#e9e7e4"/>
+</svg>
